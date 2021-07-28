@@ -1,71 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta name="author" content="Franco Alvarez">
+	<meta name="keywords" content="cafe,jizumcoffee,historia,informacion">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css y scss/historia.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
-<script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
-
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
 
 	
     <title>Historia</title>
-</head>
-<body>
-    <header>
-    <div class="container">
-        <div class="navbar">
-            <a href="index.html"><img src="rr.png" class="logo"></a>
-<nav class="nav">
+    </head>
+    <body>
     
-    <ul>
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="historia.html">Historia</a></li>
-        <li><a href="nosotros.html">Nosotros</a></li>
-        <li><a href="galeria.html">Galeria</a></li>
-        <li><a href="contactate.html">Contactate</a></li>
-    </ul>
-    
+    <section class="header">
+
+<nav>
+    <a href="index.html"><img src="rr.png" alt=""></a>
+    <div class="nav-links" id="navLinks">
+        <i class="fa fa-times" onclick="hideMenu()"></i>
+<ul>
+    <li><a href="index.html">Inicio</a></li>
+    <li><a href="historia.html">Historia</a></li>
+    <li><a href="nosotros.html">Nosotros</a></li>
+    <li><a href="galeria.html">Galeria</a></li>
+    <li><a href="contactate.html">Contactate</a></li>
+</ul>
+    </div>
+    <i class="fa fa-bars" onclick="showMenu()"></i>
 </nav>
-        </div>
-<div class="row">
-    <div class="col">
-<h1>Historia del Cafe</h1>
-<p class="parrafo">No hay nada como una taza de café para estimular las células del cerebro.</p>
 
-    </div>
-    
-    <div class="col">
-        <div class="card">
-            <a href="#Comienzos"><h5 class="titulo-responsive">Comienzos</h5></a>
-            
-        </div>
-        <div class="card card1">
-            <a href="#Historia"><h5 class="titulo-responsive">Historia</h5></a>
-            
-        </div>
-        <div class="card card2">
-            <a href="#Lugares"><h5 class="titulo-responsive">Lugares</h5></a>
-            
-        </div>
-        <div class="card card3">
-            <a href="#Preparacion"><h5 class="titulo-responsive">Preparacion</h5></a>
-            
-            
-            
-        </div>
-    </div>
-
+<div class="text-box">
+<h3>
+    Historia
+</h3>
+<p>
+    No hay nada como una taza de cafe para estimular las celulas del cerebro
+</p>
 </div>
 
-    </div>
-</header>
+</section>
+
+<script>
+var navLinks = document.getElementById("navLinks");
+
+function showMenu(){
+    navLinks.style.right ="0";
+}
+
+function hideMenu(){
+    navLinks.style.right ="-200px";
+}
+</script>
 
 <section class="comienzos">
-<h1 id="Comienzos">Comienzos</h1>
+<h1>Comienzos</h1>
 <p>El café goza de una enorme popularidad. Preparada por la infusión de semillas de cafeto, su sabor y aroma cautivan a millones de personas en el mundo.</p>
 
 <div class="fila">
@@ -74,7 +68,7 @@
 <p>El origen del café no ha sido una salvedad. Una historia de leyenda, famosa por musulmanes y cristianos, charla de que  en una ocasión en que el Profeta estaba enfermo, el ángel Gabriel le devolvió la salud y la fuerza viril, ofreciéndole una bebida negra como la gran Piedra Negra que hay en La Meca.</p>
 </div>
 <div class="fila-col">
-<h3 id="Historia">Historia</h3>
+<h3>Historia</h3>
 <p>Los árabes fueron los primeros en descubrir las virtudes y las posibilidades nutritivas del cultivo del café. Por eso, durante mucho tiempo se creyó que la planta proveedora de café era árabiga.</p>
 </div>
 <div class="fila-col">
@@ -87,7 +81,7 @@
 
 
 <section class="lugares">
-<h1 id="Lugares">Lugares</h1>
+<h1>Lugares</h1>
 <p>Principales lugares donde mas se disfruta tomar cafe</p>
 
 <div class="fila">
@@ -108,7 +102,7 @@
     <div class="fila-lugares">
         <img src="img/newyork.jpeg">
         <div class="capa">
-            <h3>ESTADOS UNIDOS</h3>
+        <h3>ESTADOS UNIDOS</h3>
         </div>
         </div>
 </div>
@@ -118,7 +112,7 @@
 
 
 <section class="preparacion">
-<h1 id="Preparacion">
+<h1>
     ¡Preparacion de un buen Cafe!
 </h1>
 <p>Te dejamos unos de los mejores videos preparando cafe</p>

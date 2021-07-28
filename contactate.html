@@ -1,13 +1,58 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Formulario</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
-	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
-</head>
-<body class="body-form">
-	<a href="index.html"><img src="rr.png" class="logo"></a>
+    <meta name="author" content="Franco Alvarez">
+	<meta name="keywords" content="cafe,jizumcoffee,contactate,informacion">
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css y scss/contactate.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+<body>
+    <section class="header">
+
+        <nav>
+            <a href="index.html"><img src="rr.png" alt=""></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="historia.html">Historia</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="galeria.html">Galeria</a></li>
+            <li><a href="contactate.html">Contactate</a></li>
+        </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        
+        <div class="text-box">
+        <h3>
+            Contactate
+        </h3>
+        <p>
+            Conctate con nosotros mientras disfrutas de una buena taza de cafe
+        </p>
+        </div>
+        
+        </section>
+        
+        <script>
+        var navLinks = document.getElementById("navLinks");
+        
+        function showMenu(){
+            navLinks.style.right ="0";
+        }
+        
+        function hideMenu(){
+            navLinks.style.right ="-200px";
+        }
+        </script>
+	
 	<div class="containerr">
 		<div class="contact-box">
 			<div class="left"></div>
@@ -21,5 +66,18 @@
 			</div>
 		</div>
 	</div>
+
+	<section class="pie">
+        <h4>Jizum Coffee</h4>
+        <p>Una vez que te despiertas y hueles el cafe, es difícil volver a dormirse</p>
+        <div class="icons">
+            <a href="https://www.facebook.com/"><i class="fa fa-facebook-f"></i></a>
+            <a href="https://www.twitter.com/"><i class="fa fa-twitter"></i></a>
+            <a href="https://www.whatsapp.com/"><i class="fa fa-whatsapp"></i></a>
+            <a href="https://www.youtube.com/"><i class="fa fa-youtube"></i></a>
+        </div>
+        <p>Proyecto realizado por <i class="fa fa-heart-o"></i> Franco Alvarez</p>
+        
+        </section>
 </body>
 </html>
